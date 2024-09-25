@@ -15,7 +15,7 @@ while True:
         if option not in [1,2,3]: # SE A OPÇÃO NÃO ESTÁ EM UM DESSES VALORES DA LISTA 
             print('Insira uma opção válida!')
         if option == 1:
-            print(f'{number} convertido para BINARIO é igual a {bin(number)[1:]}')
+            print(f'{number} convertido para BINARIO é igual a {bin(number)[2:]}') # USEI O FATIAMENTO PRA REMOVER O PREFIXO
         if option == 2:
             print(f'{number} convertido para OCTAL é igual a {oct(number).removeprefix('0o')}')
         if option == 3:
