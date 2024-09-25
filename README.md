@@ -6,7 +6,7 @@ This repository contains files, exercises, and projects from my programming cour
 
 - **_Mundo1**: First module of the course
 - **_Mundo2**: Second module of the course
-- **Aula Number**: The class i did and  the exercise of this clas.
+- **Aula Number**: The class i did and  the exercise of this class.
 
 ## How to Use
 
