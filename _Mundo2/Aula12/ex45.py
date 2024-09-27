@@ -1,8 +1,10 @@
+from os import get_terminal_size
 from random import randint
 from time import sleep
 playagain = 'y'
 placarpc = 0
 placarjog = 0
+size = get_terminal_size().lines #ele te da largura e altura, com o .lines, vc pega so a quantidade de
 while playagain in ['Y','y']:
     print('='*20)
     print('Suas opções: ')
@@ -91,9 +93,11 @@ while playagain in ['Y','y']:
         playagain = str(input('Deseja jogar novamente? (Y/N) : '))
 
         if playagain in ['y','Y']:
+            print('\n'*size)
             break
 
         if playagain in ['n','N']:
+            print('\n'*size)
             print('Obrigado por jogar! :) ')
             break
 
@@ -106,5 +110,4 @@ while playagain in ['Y','y']:
         elif placarjog > placarpc:
             print(f'PLACAR FINAL: {placarjog}x{placarpc} --> JOGADOR GANHOU')
         break
-
-
+input('PRESSIONE QUALQUER TECLA PARA FINALIZAR O PROGRAMA!!')
