@@ -6,20 +6,24 @@ placarpc = 0
 placarjog = 0
 size = get_terminal_size().lines #ele te da largura e altura, com o .lines, vc pega so a quantidade de
 while playagain in ['Y','y']:
-    print('='*20)
-    print('Suas opções: ')
-    print('[ 1 ] PEDRA')
-    print('[ 2 ] PAPEL')
-    print('[ 3 ] TESOURA')
-    print('='*20)
-    while True:
-        option = int(input('Qual é a sua jogada? '))
-        if option not in [1,2,3]:
-            print('Entrada inválida, escolha uma das opções dadas.')
-            continue
-        else:
-            break
-
+    try:
+        print('='*20)
+        print('Suas opções: ')
+        print('[ 1 ] PEDRA')
+        print('[ 2 ] PAPEL')
+        print('[ 3 ] TESOURA')
+        print('='*20)
+        while True:
+            option = int(input('Qual é a sua jogada? '))
+            if option not in [1,2,3] :
+                print('Entrada inválida, escolha uma das opções dadas.')
+                continue
+            else:
+                break
+    except ValueError:
+        print('Entrada inválida, escolha uma das opções dadas.')
+        continue
+    
     print('='*25)
     print('JO')
     sleep(1)
