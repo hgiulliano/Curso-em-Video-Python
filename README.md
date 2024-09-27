@@ -12,4 +12,4 @@ This repository contains files, exercises, and projects from my programming cour
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/hgiulliano/Curso-em-V-deo---Python.git
+   git clone https://github.com/hgiulliano/Curso-em-Video-Python.git
