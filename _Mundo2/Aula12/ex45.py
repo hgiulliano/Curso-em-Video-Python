@@ -34,5 +34,35 @@ print(f'Computador jogou {pcanswer}')
 print(f'Jogador jogou {answer}')
 print('-='*11)
 
+if pcanswer == 1: #pc jogou PEDRA
+    if answer == 1:
+        print('EMPATE!!')
+    elif answer == 2:
+        print('JOGADOR VENCE')
+    elif answer == 3:
+        print('COMPUTADOR VENCE')
+    else:
+         print('Jogada invalida')
+
+if pcanswer == 2: #pc jogou PAPEL
+    if answer == 1:
+        print('COMPUTADOR VENCE')
+    elif answer == 2:
+        print('EMPATE')
+    elif answer == 3:
+        print('JOGADOR VENCE')
+    else:
+        print('Jogada invalida')
+
+if pcanswer == 3: #pc jogou TESOURA
+    if answer == 1:
+        print('JOGADOR GANHA')
+    elif answer == 2:
+        print('COMPUTADOR GANHA')
+    elif answer == 3:
+        print('EMPATE')
+    else:
+         print('Jogada invalida')
+
 
 
