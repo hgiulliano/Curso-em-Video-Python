@@ -1,0 +1,6 @@
+frase = str(input('Digite uma frase: ')).strip().upper()
+separado = frase.split()
+junto = ''.join(separado)
+print(frase)
+print(separado)
+print(junto)
